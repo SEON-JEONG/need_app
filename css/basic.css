@@ -20,7 +20,7 @@ section {
   min-width: 360px;
   margin: auto;
   border-radius: 20px;
-  background: url("img/1.jpg") no-repeat;
+  background: url("../img/1.jpg") no-repeat;
   background-size: cover;
   box-shadow: 27px 43px 43px -26px rgba(49, 49, 49, 0.9);
 }
