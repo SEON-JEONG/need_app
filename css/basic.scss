@@ -1,0 +1,125 @@
+@charset "UTF-8";
+$gradient : linear-gradient(60deg, #fd9ad0, #a1affc );
+
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: transparent; padding:50px; 
+
+  
+
+
+}
+button { background:transparent; cursor: pointer;}
+
+
+section {
+
+  height: 800px;
+  max-width:400px; min-width: 360px; margin:auto;
+  border-radius: 20px;
+  background: url('/img/1.jpg') no-repeat;
+  background-size: cover;
+  box-shadow: 27px 43px 43px -26px rgba(49, 49, 49, 0.90);
+  
+
+
+
+  header {
+    text-align: left;
+    color: white;
+    font-size: 60px;
+    padding: 25px 30px;
+    
+    b {
+      font-size: 75px;
+    }
+  }
+
+  footer {
+    background:transparent;
+    border-radius:0 0 16px 16px;
+    text-align: center;
+
+    .footer_wrap {
+      position: relative; top: 20px;
+    }
+
+    .footer_input {
+      background-color: rgba(255,255,500,0.2);
+      border-radius: 10px;
+      width:80%;
+      height:40px; padding:0 20px;
+      border:0; outline:0;
+      margin-left: 20px;
+
+      // 메세지칸 글씨 색
+      &::placeholder { 
+        color:#ccc
+      }
+    }
+    .footer_addBtn{
+      width:48px; height: 48px; 
+      font-size:28px;
+      color:rgba(255,255,255,0.5);
+      transition:0.3s ease-in;
+
+      &:hover { 
+        color:rgba(255,255,255,1);
+        transform:scale(1.1);
+      }
+    }
+  }
+}
+
+
+
+
+li {
+  padding: 10px 0;
+}
+
+ul.items{
+  height:530px;
+  overflow-y:auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .item_row{}
+  .item {
+    display: flex; justify-content:space-between;
+    padding:12px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 20px;
+    height: 45px;
+    color: #797474;
+    font-size: 18px;
+    font-weight: 700;
+
+    .item_name {}
+    .item_delBtn {
+      font-size:16px;
+      color: #797474  ;
+      transition:0.3s ease-in;;
+
+      &:hover {
+        color: #f15151;
+        transform:scale(1.1);
+      }
+    }
+  
+  }
+  
+.item_divider { 
+    width:90%; height:1px; 
+    margin:auto}
+}
